@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,6 @@
   <link rel="stylesheet" href="styles/assets/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="styles/styles.css">
 
-  
-
 </head>
 
 <body class="auth-body">
@@ -27,26 +26,33 @@
       <div class="d-flex justify-content-center mb-5 mt-3"><img src="styles/assets/images/svg/logo-asefide.svg" alt="adminHMD dashboard interface"></div>
       <form class="needs-validation" novalidate>
         <div class="mb-4">
-          
+
           <h1 class="h3 mb-1">Te damos la bienvenida nuevamente</h1>
           <p class="text-muted mb-0">Inicia sesión con tu correo y contraseña</p>
         </div>
-        <div class="mb-4 fs-5"><label class="form-label" for="loginEmail">Correo electrónico</label><input class="form-control" id="loginEmail" type="email" required><div class="invalid-feedback">Enter a valid email.</div></div>
+        <div class="mb-4 fs-5"><label class="form-label" for="loginEmail">Correo electrónico</label><input class="form-control" id="loginEmail" type="email" required>
+          <div class="invalid-feedback">Enter a valid email.</div>
+        </div>
+        <div class="mb-4 fs-5"><label class="form-label" for="loginPassword">Contraseña</label><input class="form-control" id="loginPassword" type="password" required>
+          <div class="invalid-feedback">Enter a valid password.</div>
+        </div>
         <div class="d-flex justify-content-between">
 
-        <label class="form-label" for="loginPassword">Contraseña</label>
-        <a class="small fw-semibold" href="recuperar.php">¿Olvidaste tu contraseña?</a>
+          <a class="small fw-semibold" href="recuperar.php">¿Olvidaste tu contraseña?</a>
         </div>
-        
+
         <div class="form-check mb-4"></div>
-        <button class="btn btn-primary w-100" type="submit"> Iniciar sesión</button>
+        <a href="index.php" class="btn btn-primary w-100">
+          Iniciar sesión
+        </a>
       </form>
-      
-      <div class="auth-footer">¿No tienes cuenta? <a href="mailto:adminasefide@gmail.com">Contacta a un administrador</a></div>
+
+      <div class="auth-footer">¿No tienes cuenta? <a href="registro.php">Regístrate</a></div>
     </section>
   </main>
 
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
+
 </html>
