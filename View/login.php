@@ -32,7 +32,12 @@
           <p class="text-muted mb-0">Inicia sesión con tu correo y contraseña</p>
         </div>
         <div class="mb-4 fs-5"><label class="form-label" for="loginEmail">Correo electrónico</label><input class="form-control" id="loginEmail" type="email" required><div class="invalid-feedback">Enter a valid email.</div></div>
-        <div class="mb-3"><div class="d-flex justify-content-between"><label class="form-label" for="loginPassword">Contraseña</label><a class="small fw-semibold" href="forgot-password.html">¿Olvidaste tu contraseña?</a></div><input class="form-control" id="loginPassword" type="password" minlength="6" required><div class="invalid-feedback">Password must be at least 6 characters.</div></div>
+        <div class="d-flex justify-content-between">
+
+        <label class="form-label" for="loginPassword">Contraseña</label>
+        <a class="small fw-semibold" href="recuperar.php">¿Olvidaste tu contraseña?</a>
+        </div>
+        
         <div class="form-check mb-4"></div>
         <button class="btn btn-primary w-100" type="submit"> Iniciar sesión</button>
       </form>
